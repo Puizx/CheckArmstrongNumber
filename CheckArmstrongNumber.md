@@ -1,0 +1,22 @@
+
+number = input("Give me your number:  ")
+
+number = list(number)
+z = int(len(number))
+total1=[]
+total = 0
+
+for i in number:
+    i = int(i)
+    total1.append(i)
+    total = total + (i**z)
+
+total = str(total)
+total = list(total)
+
+if (total == number):
+    print("Your number is an armstrong number.")
+else:
+    print("Your number isn't an armstrong number.")
+    
+    
